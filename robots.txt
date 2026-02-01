@@ -1,0 +1,10 @@
+# robots.txt for hamish.ai
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://hamish.ai/sitemap.xml
+
+# Block draft content if any
+Disallow: /drafts/
