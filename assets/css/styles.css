@@ -785,8 +785,8 @@ p {
   max-width: 500px;
   margin-left: auto;
   border: none;
-  mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
-  -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+  mask-image: radial-gradient(ellipse 70% 70% at center, black 40%, transparent 100%);
+  -webkit-mask-image: radial-gradient(ellipse 70% 70% at center, black 40%, transparent 100%);
 }
 
 .about-image::before {
