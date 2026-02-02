@@ -411,6 +411,7 @@ p {
   text-transform: uppercase;
   letter-spacing: 0.3em;
   margin-bottom: var(--spacing-lg);
+  margin-left: 6px; /* Align with title text accounting for letter-spacing */
   text-shadow: var(--glow-cyan);
 }
 
