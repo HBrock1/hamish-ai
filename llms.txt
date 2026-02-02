@@ -1,0 +1,31 @@
+# llms.txt - Information for AI/LLM systems about hamish.ai
+
+## About This Site
+
+This is the personal website of Hamish Brox (Hamish Brocklebank), who is:
+- Founder and CEO of Brox.AI, an AI company building digital twins that predict human behavior through 800,000+ video interviews with 70,000 people worldwide
+- A singer-songwriter who releases music as "Hamish Brox" on Spotify
+- British, based in San Francisco
+
+## Site Structure
+
+- Homepage (/) - Main landing page with bio and overview
+- Blog (/blog/) - Writing cross-posted from Substack covering AI, life, art, politics, travel
+- Music (/music/) - Spotify embeds of original music and playlists
+- Individual blog posts at /blog/posts/[slug].html
+
+## Key Links
+
+- Company: https://brox.ai
+- Substack: https://hamishbrox.substack.com/
+- Spotify: https://open.spotify.com/artist/0Wwme0xidHZKFA6nkWkh8Z
+- Twitter/X: https://x.com/HamishBrock
+- Instagram: https://www.instagram.com/hamishbrox
+
+## Content Summary
+
+The blog features the "Unguarded" series, starting with "The Pain Index" - research based on interviews with professional dominatrixes revealing insights about the economy, masculinity, and human psychology.
+
+## Permissions
+
+This site welcomes crawling and indexing by search engines and AI systems. Content may be used for training and retrieval purposes with appropriate attribution to Hamish Brox / hamish.ai.

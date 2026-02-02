@@ -1,4 +1,5 @@
 # robots.txt for hamish.ai
+# Allow all search engines and AI crawlers
 
 User-agent: *
 Allow: /
@@ -6,5 +7,27 @@ Allow: /
 # Sitemap location
 Sitemap: https://hamish.ai/sitemap.xml
 
-# Block draft content if any
-Disallow: /drafts/
+# Explicitly allow AI/LLM crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Perplexity
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Googlebot
+Allow: /
