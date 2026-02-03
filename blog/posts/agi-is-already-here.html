@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AGI is already here (sort of) | Hamish Brox</title>
+  <meta name="description" content="My non-hype take on Claude Code—it's amazing for non-coders. How I use it for CRM, sales, internal operations, and more.">
+  <meta name="author" content="Hamish Brox">
+  <link rel="canonical" href="https://hamish.ai/blog/posts/agi-is-already-here.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://hamish.ai/blog/posts/agi-is-already-here.html">
+  <meta property="og:title" content="AGI is already here (sort of)">
+  <meta property="og:description" content="My non-hype take on Claude Code—it's amazing for non-coders. How I use it for CRM, sales, internal operations, and more.">
+  <meta property="og:image" content="https://hamish.ai/assets/images/hero.png">
+  <meta property="article:published_time" content="2026-02-02">
+  <meta property="article:author" content="Hamish Brox">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@HamishBrock">
+  <meta name="twitter:title" content="AGI is already here (sort of)">
+  <meta name="twitter:description" content="My non-hype take on Claude Code—it's amazing for non-coders. How I use it for CRM, sales, internal operations, and more.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+
+  <!-- Fonts - Space Grotesk + IBM Plex Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo"></a>
+
+      <div class="nav-links" id="navLinks">
+        <a href="/blog/" class="nav-link" style="color: var(--text-primary);">Blog</a>
+        <a href="/music/" class="nav-link">Music</a>
+        <a href="https://hamishbrox.substack.com/" target="_blank" rel="noopener" class="nav-link">Substack</a>
+      </div>
+
+      <div class="nav-socials">
+        <a href="https://open.spotify.com/artist/0Wwme0xidHZKFA6nkWkh8Z" target="_blank" rel="noopener" class="nav-social" aria-label="Spotify">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/hamishbrox" target="_blank" rel="noopener" class="nav-social" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        </a>
+        <a href="https://x.com/HamishBrock" target="_blank" rel="noopener" class="nav-social" aria-label="Twitter">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+      </div>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Article -->
+  <article class="article">
+    <header class="article-header">
+      <div class="article-meta">
+        <span class="badge badge-tech">Tech</span>
+        <span class="article-date">February 2, 2026</span>
+      </div>
+      <h1 class="article-title gradient-text">AGI is already here (sort of)</h1>
+      <p class="article-subtitle" style="color: var(--text-muted); font-size: 1.1rem; margin-top: 1rem;">My Non-Hype take on Claude Code (It's amazing for non-coders)</p>
+      <p class="article-source">Originally published on <a href="https://hamishbrox.substack.com/" target="_blank" rel="noopener">Substack</a></p>
+    </header>
+
+    <div class="article-content">
+      <h2>What is Claude Code?</h2>
+
+      <p>Claude Code is Anthropic's desktop applications (also command line tool but don't worry about that) that lets you delegate complex tasks. Unlike chat-based AI models where you're essentially having a conversation, Claude Code can actually <em>do things</em>, it can read and write files, execute commands, browse the web, interact with APIs, and chain together complex workflows using all of these. It can also build tools to do things that it can't currently do (it's a slow singularity of sorts).</p>
+
+      <p>The difference is fundamental. Chat models are like having a very smart advisor who can only talk. Claude Code is like having a junior employee who can do stuff. It uses MCPs (Model Context Protocol servers, basically plugins that let Claude connect to Gmail, Slack, databases, APIs, whatever you need and allow it to do things like send an email) and Skills (instruction files that teach it how to do specific tasks your way, and also how to use multiple tools).</p>
+
+      <hr>
+
+      <h2>How I Use It (And It's Only Been Two Weeks)</h2>
+
+      <p>I don't primarily use it to code I use it for "business" work, and it's amazing, with a bunch of skills set up and MCPs I use it to:</p>
+
+      <h3>CRM & Sales:</h3>
+
+      <ul>
+        <li>Update my CRM and remind me who I need to chase</li>
+        <li>Create custom proposals and output them as PDFs</li>
+        <li>Find prospective leads (I built a skill using the Apollo API, so it can pull them straight away)</li>
+        <li>Email those leads with personalized outreach (or suggest emails for my approval, I built my own little CRM thing using Claude Code to manage this)</li>
+        <li>Follow up with Clients</li>
+      </ul>
+
+      <h3>Internal Operations:</h3>
+
+      <ul>
+        <li>Tell me what's going on with every client whenever I want</li>
+        <li>Find and dive into contracts for tiny details (and find where terms in an email conflicted with a contract)</li>
+        <li>Retrieve all my company funding documents during a raise (they were all over my computer)</li>
+        <li>Analyze my company's finances (helping us reduce spend and forecast better), I just gave it access to raw transaction data from our bank, credit card, and access to all my invoices and contacts (it even told me that I had forgotten to send a $25K invoice to a client, as it check my emails to see if I had sent it)</li>
+        <li>Email my team for weekly updates and track the responses</li>
+        <li>Tell me what I should read on Slack</li>
+        <li>Update my To Do list when I complete a task (I use Apple Notes and it's fine updating this)</li>
+      </ul>
+
+      <h3>Client & Compliance:</h3>
+
+      <ul>
+        <li>Respond to compliance-related client emails (super long and tedious)</li>
+        <li>Respond to maybe 20% of all my email generally</li>
+        <li>Fill in forms on the web using browser automation</li>
+        <li>Remove all my spam emails every morning (mostly terrible sales emails)</li>
+      </ul>
+
+      <h3>Content & Web:</h3>
+
+      <ul>
+        <li>Monitor everything my competitors are doing</li>
+        <li>Launch new blog pages on a subsite without bothering my CTO or dev team (the content isn't AI-generated, but the whole subsite infrastructure is: <a href="https://reports.brox.ai/" target="_blank" rel="noopener">https://reports.brox.ai/</a>)</li>
+        <li>Launch my own personal website and design it <a href="https://hamish.ai" target="_blank" rel="noopener">hamish.ai</a> (took me two hours)</li>
+      </ul>
+
+      <h3>Task Automation:</h3>
+
+      <ul>
+        <li>I give it my tasks and it tries to complete them automatically, I just approve which ones to attempt, and even suggests tools and data that it needs to complete the task.</li>
+      </ul>
+
+      <p>Oh, and it's really good at coding too.</p>
+
+      <hr>
+
+      <h2>Why This Is a Game Changer</h2>
+
+      <p>These all sound like small tasks individually, but collectively, it's a fucking game changer. What I used to apportion a week to now takes two days.</p>
+
+      <p>What makes it powerful from a business perspective isn't just all its MCPs and interconnected tooling, it's that I can sit in one interface, create 10 tasks in parallel, and it's like delegating to a team. Yes, I have to review the output, but it gets it right most of the time.</p>
+
+      <p>And here's what's really cool: when it gets something wrong, I tell it why and ask it to try again. When it then hopefully gets it right, I tell it to update its Skills files so it doesn't make the same mistake twice. The system learns and improves the more you use it.</p>
+
+      <hr>
+
+      <h2>What Makes It Work</h2>
+
+      <p>Claude Code works best when two things are true:</p>
+
+      <ol>
+        <li><strong>It's grounded with really good data.</strong> Incidentally this is also why our digital twins at Brox work well, garbage in, garbage out applies to everything.</li>
+        <li><strong>You invest time describing your workflows.</strong> How your files are structured, how you want things done, what your standards are. You also need a clear goal, not necessarily fully developed, but you have to know enough to know what you want.</li>
+      </ol>
+
+      <hr>
+
+      <h2>The Implications</h2>
+
+      <h3>Are jobs fucked? Yes and no</h3>
+
+      <p>I can't quite see it replacing whole functions yet, but I can see that one person can now do a whole lot more. We'll need fewer people for each function. The world is going to split between people who can use these tools well, probably those with the ability to think abstractly and break down complex problems, and those who can't, or who can only use them at "Level 1." (This is why I'm investing a lot of my time getting my nontechnical team using Claude Code, they are doing great)</p>
+
+      <p>This will cause unemployment for many, especially older workers who have a less flexible model of what cognitive work looks like, but the young and smart this should be a good thing (unless AI kills us all or replaces the economy, in which case we're all shit creek, even the billionaires in their supposed bunkers).</p>
+
+      <hr>
+
+      <h2>The Future of Software</h2>
+
+      <p>More broadly, I think most SaaS software is fucked.</p>
+
+      <p>Sure, it will take a while to displace Salesforce and its ilk. But not forever. Every CRM, every workflow application, accounting software, sales software, cap table management software, eventually even Microsoft Office, it really is easier to create documents with HTML, or use Python and a CSV file instead of Excel.</p>
+
+      <h3>Which Businesses Survive?</h3>
+
+      <p>The companies that remain (I think) will be those with:</p>
+
+      <ul>
+        <li><strong>A real IP moat</strong>, there will be fewer and fewer of these. (We like to think Brox has one of these, but then again everyone thinks they have a moat.)</li>
+        <li><strong>A data moat</strong>, maybe Salesforce has this, but I'm not sure. (We definitely have one of these, good luck replicating our data)</li>
+        <li><strong>Regulatory protection</strong>, either from government or industry, creating high barriers to competition.</li>
+        <li><strong>Distribution lock-in</strong>, though I suspect this will diminish over time.</li>
+        <li><strong>A trust factor</strong>, I want my savings with JPMorgan, not some NeoBank.</li>
+        <li><strong>Compliance software</strong>, all of this is going to create a massive compliance headache. The companies who can't adapt will fail, which means the companies that help other companies adapt (compliance software, GRC platforms, that whole world) will win big.</li>
+        <li><strong>Security companies</strong>, for the same reasons as compliance, this is going to be a security nightmare. I get every new thing I do approved by one of my dev team, but that's easy for us because we're small and our threat surface area is small. For big companies? This will be an absolute shitshow. Every employee potentially spinning up agentic workflows that connect to external services? Good luck to the CISOs, but if they don't they will lose to the companies that do.</li>
+      </ul>
+
+      <hr>
+
+      <h2>Final Thoughts</h2>
+
+      <p>Claude Code isn't perfect (there are other tools as well like GPT Codex). It makes mistakes. It sometimes confidently does the wrong thing. But the feedback loop: use it, correct it, update the skills, use it again, means it gets better over time.</p>
+
+      <p>Lastly, I believe that the future of software will be the MCP. Every piece of software you can't build yourself will become an MCP for agents (mostly human-supervised I hope) to interact with. If you're in software and your business doesn't work as an MCP then you are double screwed.</p>
+
+      <p><em>Also Claude have released a feature called Co-work which is a hybrid of Claude Code, it's ok but it's annoying for a lot of reasons, this will probably change.</em></p>
+    </div>
+
+    <!-- Article Navigation -->
+    <nav class="article-nav">
+      <a href="/blog/" class="article-nav-link">← All Posts</a>
+    </nav>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer" style="margin-top: var(--spacing-3xl);">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-left">
+          &copy; 2026 Hamish Brox. Built with intention.
+        </div>
+        <div class="footer-links">
+          <a href="/" class="footer-link">Home</a>
+          <a href="/music/" class="footer-link">Music</a>
+          <a href="https://hamishbrox.substack.com/" target="_blank" rel="noopener" class="footer-link">Substack</a>
+          <a href="https://brox.ai" target="_blank" rel="noopener" class="footer-link">Brox.AI</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    navToggle.addEventListener('click', () => navLinks.classList.toggle('active'));
+  </script>
+</body>
+</html>
